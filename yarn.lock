@@ -2588,12 +2588,13 @@
     babel-plugin-const-enum "^1.0.0"
 
 "@rnx-kit/cli@^0.5.27":
-  version "0.5.27"
-  resolved "https://registry.yarnpkg.com/@rnx-kit/cli/-/cli-0.5.27.tgz#0edcee5081e4901f012b812de5ec9a0c0b05d53e"
-  integrity sha512-ce+4MOlscGxEHzhATLJMZJ0Kiole6WII8rL4ub92GLvtVnemhh3Hh5SVFPDYgAsTUe2K78qM9J4K7BiefVLpLA==
+  version "0.5.30"
+  resolved "https://registry.yarnpkg.com/@rnx-kit/cli/-/cli-0.5.30.tgz#17aa77827074f7de7cf4bc37993d68f219b29135"
+  integrity sha512-I98Ay9sjoiiaxFQcZQxoTqZZTxR28bdp0XTWvLs15i4KqyLTn9WiwHpcA1yv/713Rv1Mc3DT40hx0mDFFak3JQ==
   dependencies:
     "@rnx-kit/config" "0.2.9"
-    "@rnx-kit/dep-check" "^1.5.8"
+    "@rnx-kit/dep-check" "^1.5.10"
+    "@rnx-kit/metro-service" "1.0.2"
     "@rnx-kit/third-party-notices" "1.0.1"
     chalk "^4.1.0"
 
@@ -2612,16 +2613,17 @@
   dependencies:
     chalk "^4.1.0"
 
-"@rnx-kit/dep-check@^1.5.8":
-  version "1.5.8"
-  resolved "https://registry.yarnpkg.com/@rnx-kit/dep-check/-/dep-check-1.5.8.tgz#569187c41176b934ce59b5fa55bd9895aa7d0e84"
-  integrity sha512-1wVgCV3aIFHSGqO2oGBnz35vqJjYCPEV5mVIXPSUU3lFse0KsTrlseV7Phl6QWJFa66YRx1XrqFkHOH4FNPOZw==
+"@rnx-kit/dep-check@^1.5.10":
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/@rnx-kit/dep-check/-/dep-check-1.5.10.tgz#8188ae81753b47266fa01070324aab7d2b0641e4"
+  integrity sha512-j0XBG9AaiBM1aVuEjV//QGpWYuJKH4qj28RWDLrY0Dfq+YJSI7VUeiMlQql5aq2c0gMX3sXTmt4X2X3yC95mdA==
   dependencies:
     "@rnx-kit/config" "^0.2.9"
     "@rnx-kit/console" "^1.0.0"
     chalk "^4.1.0"
     find-up "^5.0.0"
     jest-diff "^26.0.0"
+    pkg-dir "^5.0.0"
     semver "^7.0.0"
     workspace-tools "^0.16.2"
     yargs "^16.0.0"
@@ -2634,6 +2636,14 @@
     "@rnx-kit/babel-preset-metro-react-native" "^1.0.3"
     find-up "^5.0.0"
     workspace-tools "^0.16.2"
+
+"@rnx-kit/metro-service@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@rnx-kit/metro-service/-/metro-service-1.0.2.tgz#267e8bfbdc6bb4cfb91677d2dc28d8a3aab352b0"
+  integrity sha512-rPI4zes4ImvL8rblE225OBw4Ih8hzOtCfc5JRgaaNrh+gMf3xn1rAYUcsXt3mOlxTFQtdHLCC95BElI1dTnN0g==
+  dependencies:
+    chalk "^4.1.0"
+    mkdirp "^0.5.3"
 
 "@rnx-kit/third-party-notices@1.0.1":
   version "1.0.1"
@@ -13977,6 +13987,13 @@ pkg-dir@^4.2.0:
   integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
   dependencies:
     find-up "^4.0.0"
+
+pkg-dir@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-5.0.0.tgz#a02d6aebe6ba133a928f74aec20bafdfe6b8e760"
+  integrity sha512-NPE8TDbzl/3YQYY7CSS228s3g2ollTFnc+Qi3tqmqJp9Vg2ovUpixcJEo2HJScN2Ez+kEaal6y70c0ehqJBJeA==
+  dependencies:
+    find-up "^5.0.0"
 
 pkg-up@^3.1.0:
   version "3.1.0"
